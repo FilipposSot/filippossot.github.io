@@ -2,15 +2,20 @@
     --img-margin: 0.5em;
 }
 
+html {
+    scroll-padding-top: 3cm; /* height of sticky header */
+  }
+
 body {
     margin-left: auto;
     margin-right: auto;
     width: 25cm;
     max-width: 90%;
     font-family: 'Questrial', sans-serif;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.4em;
     letter-spacing: 0.06em;
+    padding-top: 3cm;
 }
 .separator {
     height: 1px;
@@ -18,9 +23,15 @@ body {
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.thin-separator {
+    height: 1px;
+    background-color: gainsboro;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 .section, section {
-    margin-top: 2cm;
-    margin-bottom: 2cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
 }
 h2 {
     font-weight: bold;
@@ -34,22 +45,32 @@ h2 {
 }
 
 a {
-    color: #4CAAC9;
+    color: #858384;
+    text-decoration: none;
 }
+
 a:hover {
     color: #3387a2;
 }
 
 header {
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    right: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    padding-bottom: 0em 
 }
 header #name {
     text-align: center;
     font-size: 2.5ch;
     font-weight: 700;
     letter-spacing: 0.1ch;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
 }
 nav {
     text-align: center;
@@ -63,11 +84,11 @@ nav a {
 }
 nav a.active-link {
     text-decoration: none;
-    color: #ccc;
+    color: #858384;
 }
 nav a.active-link:hover {
     text-decoration: none;
-    color: #ccc;
+    color: #3387a2;;
 }
 
 .img-right {
@@ -138,3 +159,59 @@ footer img {
         color: black;
     }
 }
+
+details > summary {
+    cursor: pointer;
+    list-style-image:url('chevron_right_resized.png');
+}
+
+details[open] > summary {
+    cursor: pointer;
+    list-style-image: url('chevron_down_resized.png');
+}
+
+details summary{
+    font-weight: bold;
+    font-size: xx-large;
+    }
+
+.post {
+    /* width: 300px;
+    height: 300px; */
+    background: rgba(63, 63, 63, 0.8);
+    margin: 5% auto 0 auto;
+    background-size: cover;
+    overflow: hidden;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+      }
+    
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+      }
+      .container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      }
+      
+      .responsive-iframe {
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+        border: none;
+      }

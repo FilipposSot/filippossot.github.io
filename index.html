@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://filippossot.github.io/">
 
     <!-- Favicon -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./phi_icon.ico" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,185 +26,289 @@
 </head>
 
 <body>
-    <header>
-        <div id="name">Filippos E. Sotiropoulos</div>
-        <nav>
-            <a class="active-link" href="index.html">HOME</a>
-            <a href="about.html">ABOUT ME</a>
-            <a href="selected-work.html">SELECTED WORK</a>
-            <a href="blog.html">BLOG</a>
-            <a href="service.html">SERVICE</a>
-        </nav>
-    </header>
+    <div>
+        <header>
+            <div id="name">Filippos E. Sotiropoulos</div>
+            <nav>
+                <a class="active-link" href="index.html">HOME</a>
+                <a href="#publications" id="top">PUBLICATIONS</a>
+                <a href="#patents" id="top">PATENTS</a>
+                <a href="#projects">PROJECTS</a>
+            </nav>
+            <div class="thin-separator"></div>
+        </header>
+    </div>
 
     <div id="title-card" class="section">
         <img id="headshot" src="homepage/headshot.jpeg" alt="My professional headshot">
         <div id="title-card-right">
-            <p>Director of Engineering at Renewvia Energy<br>
+            <p>Research and AI Team Lead, Xihelm Ltd.<br>
                 <br>
-                PhD in Electrical Engineering and Computer Science, MIT<br>
+                PhD in Mechanical Engineering, MIT<br>
                 <br>
-                Email: <a rel="author" href="mailto:nicholas.selby@renewvia.com"
-                    target="_blank">nicholas.selby@renewvia.com</a>
+                <span>Email:</span> <span><a rel="author" href="mailto:filippos.sotiropoulos@gmail.com"
+                        target="_blank">filippos.sotiropoulos@gmail.com</a>
+                    <br>
+                    &emsp;&emsp;&ensp;&ensp;<a rel="author" href="mailto:filippos@xihelm.com"
+                        target="_blank">filippos@xihelm.com</a></span>
             </p>
             <div class="separator"></div>
             <div id="social-media-wrapper">
                 <a aria-label="My LinkedIn profile" rel="external"
-                    href="https://www.linkedin.com/in/nicholas-selby-5278b334/" target="_blank"><img
+                    href="https://www.linkedin.com/in/filippos-sotiropoulos/" target="_blank"><img
                         src="homepage/icon-linkedin.png" alt="LinkedIn icon"></a>
                 <a aria-label="My Google Scholar Profile" rel="external"
-                    href="https://scholar.google.com/citations?user=SKcs1pEAAAAJ" target="_blank"><img
+                    href="https://scholar.google.com/citations?user=_nZMOdoAAAAJ" target="_blank"><img
                         src="homepage/icon-googlescholar.png" alt="Google Scholar icon"></a>
-                <a aria-label="My GitHub profile" rel="external" href="https://github.com/rupumped" target="_blank"><img
-                        src="homepage/icon-github.png" alt="GitHub icon"></a>
-                <a aria-label="My CV" href="homepage/nselby-cv.pdf" download target="_blank"><img
-                        src="homepage/icon-cv.png" alt="Icon of a CV"></a>
+                <a aria-label="My GitHub profile" rel="external" href="https://github.com/FilipposSot"
+                    target="_blank"><img src="homepage/icon-github.png" alt="GitHub icon"></a>
+                <a aria-label="My CV" href="homepage/F_Sotiropoulos_Resume.pdf" download target="_blank"><img
+                        src="homepage/icon-cv-2.png" alt="Icon of a CV"></a>
             </div>
         </div>
     </div>
 
     <div id="bio" class="section">
-        I am the Director of Engineering at Renewvia Energy. I am responsible for the design, procurement, construction,
-        productive use, and software infrastructure of solar minigrids in rural Kenya and Nigeria. I have a B.S. in
-        Mechanical Engineering from the Georgia Institute of Technology, an M.S. in Mechanical Engineering from MIT, and
-        a Ph.D. in Electrical Engineering and Computer Science from MIT. I have worked as a research engineer for NASA's
-        Jet Propulsion Laboratory and Sandia National Laboratories.
+        I am the AI and Research Team Lead at Xihelm. I am responsible for ... . I have a MEng in
+        Mechanical Engineering from the University of Bristol, an M.S. in Mechanical Engineering from MIT, and
+        a Ph.D. in Mechanical Engineering from MIT.
     </div>
+    <div class="separator"></div>
+
+
+    <!-- PUBLICATIONS -->
+    <!-- <details id="publications-dropdown">
+        <summary>
+            Publication </summary> -->
 
     <section id="publications">
         <h2>Publications</h2>
         <div class="item">
-            <img src="homepage/l3.jpg" alt="Illustration of the Learned Lifting Linearization algorithm">
+            <img src="homepage/agx_digging.jpeg" alt="Screencapture of simulation environement for DFL - digging MPCC">
             <div class="desc">
-                <b><a rel="external" href="https://arxiv.org/abs/2104.02004" target="_blank">Learning of Causal
-                        Observable Functions for Koopman-DFL Lifting Linearization of Nonlinear Controlled Systems and
-                        Its Application to Excavation Automation</a></b><br>
-                Nicholas Selby and Harry Asada<br>
-                <a rel="external" href="http://www.ieee-ras.org/publications/ra-l" target="_blank">IEEE Robotics and
-                    Automation Letters</a> 6 (4), 6297–6304, 2021.<br>
-                <a href="homepage/l3.bib"
-                    aria-label="BibTeX for paper titled &quot;Learning of Causal Observable Functions for Koopman-DFL Lifting Linearization of Nonlinear Controlled Systems and Its Application to Excavation Automation&quot;"
-                    target="_blank">BibTeX</a>
+                <b><a rel="external" href="https://arxiv.org/pdf/2107.04314.pdf" target="_blank">Dynamic Modeling of
+                        Bucket-Soil Interactions Using Koopman-DFL Lifting Linearization for Model Predictive
+                        Contouring
+                        Control of Autonomous Excavators</a></b><br>
+                Filippos Sotiropoulos and Harry Asada<br>
+                <a rel="external" href="https://ieeexplore.ieee.org/document/9580576" target="_blank">IEEE Robotics
+                    and
+                    Automation Letters</a> 7 (1), 151-158, 2022.<br>
+                <a href="homepage/dynamic_bucket.bib" aria-label="BibTeX for paper titled &quot;Dynamic Modeling of
+                    Bucket-Soil Interactions Using Koopman-DFL Lifting Linearization for Model Predictive Contouring
+                    Control of Autonomous Excavators&quot;" target="_blank">BibTeX</a>
             </div>
         </div>
 
         <div class="separator"></div>
 
         <div class="item">
-            <img src="homepage/teachbot.jpg" alt="Man interacting with a collaborative manufacturing robot">
+            <img src="homepage/rock_digging_2.jpeg" alt="UR10e experimental setup for rock digging control">
             <div class="desc">
-                <b><a rel="external" href="https://www.sciencedirect.com/science/article/pii/S2405844021016868"
-                        target="_blank">TeachBot: Towards Teaching Robotics Fundamentals for Human-Robot Collaboration
-                        at Work</a></b><br>
-                Nicholas Selby, Jerry Ng, Glenda S Stump, George Westerman, Claire Traweek, and Harry Asada<br>
-                <a rel="external" href="https://www.sciencedirect.com/journal/heliyon" target="_blank">Heliyon</a> 7
-                (7), e07583, 2021.<br>
-                <a href="homepage/teachbot.bib"
-                    aria-label="BibTeX for paper titled &quot;TeachBot: Towards Teaching Robotics Fundamentals for Human-Robot Collaboration at Work&quot;"
-                    target="_blank">BibTeX</a>
+                <b><a rel="external"
+                        href="https://dspace.mit.edu/bitstream/handle/1721.1/128005/ICRA_2020___Automated_rock_scooping.pdf?sequence=2&isAllowed=y"
+                        target="_blank">Autonomous Excavation
+                        of Rocks Using a Gaussian Process Model
+                        and Unscented Kalman Filter</a></b><br>
+                Filippos Sotiropoulos and Harry Asada<br>
+                <a rel="external" href="https://ieeexplore.ieee.org/abstract/document/8990035" target="_blank">IEEE
+                    Robotics and
+                    Automation Letters</a> 5 (2), 2491-2497, 2020.<br>
+                <a href="homepage/rock_digging.bib" aria-label="BibTeX for paper titled &quot;Autonomous Excavation
+                of Rocks Using a Gaussian Process Model
+                and Unscented Kalman Filter&quot;" target="_blank">BibTeX</a>
             </div>
         </div>
 
         <div class="separator"></div>
 
         <div class="item">
-            <img src="homepage/rfind.jpg"
-                alt="Messy room as seen by a computer vision system with 'Hidden Items' identified">
+            <img src="homepage/bond_graph.png" alt="A bond graph">
             <div class="desc">
-                <b><a href="homepage/rfind.pdf" download target="_blank">Minding the Billions: Ultra-wideband
-                        Localization in Deployed RFID Tags</a></b><br>
-                Yunfei Ma, Nicholas Selby, and Fadel Adib<br>
-                <a rel="external" href="https://sigmobile.org/mobicom/2017/" target="_blank">International Conference on
-                    Mobile Computing and Networking</a>, Snowbird, UT, USA, 2017<br>
-                <a href="homepage/rfind.bib"
-                    aria-label="BibTeX for paper titled &quot;Minding the Billions: Ultra-wideband Localization in Deployed RFID Tags&quot;"
-                    target="_blank">BibTeX</a>
+                <b><a rel="external"
+                        href="https://dspace.mit.edu/bitstream/handle/1721.1/126131/ds_141_02_021002.pdf?sequence=2&isAllowed=y"
+                        target="_blank"> Dual Faceted Linearization of Nonlinear Dynamical Systems Based on Physical
+                        Modeling Theory</a></b><br>
+                Harry Asada and Filippos Sotiropoulos<br>
+                <a rel="external" href="https://doi.org/10.1115/1.4041448" target="_blank">
+                    J. Dyn. Sys., Meas., Control.
+                </a> 141(2), 2019.<br>
+                <a href="homepage/power_maximising.bib" aria-label="BibTeX for paper titled &quot;Dual Faceted Linearization of Nonlinear Dynamical Systems Based on Physical
+                Modeling Theory&quot;" target="_blank">BibTeX</a>
             </div>
         </div>
 
         <div class="separator"></div>
 
         <div class="item">
-            <img src="homepage/rfly.jpg" title="CC BY-4.0. Credit: MIT Media Lab/Fadel Adib and Jimmy Day"
-                alt="Drone with a mounted PCB">
+            <img src="homepage/power_maximising_2.jpeg" alt="Experimental Setup for power maximization control robot">
             <div class="desc">
-                <b><a href="homepage/rfly.pdf" download target="_blank">Drone Relays for Battery-Free
-                        Networks</a></b><br>
-                Yunfei Ma, Nicholas Selby, and Fadel Adib<br>
-                <a rel="external" href="http://conferences.sigcomm.org/sigcomm/2017/" target="_blank">ACM Conference on
-                    Applications, Technologies, Architectures, and Protocols for Computer Communication</a>, Los
-                Angeles, CA, USA, 2017<br>
-                <a href="homepage/rfly.bib"
-                    aria-label="BibTeX for paper titled &quot;Drone Relays for Battery-Free Networks&quot;"
-                    target="_blank">BibTeX</a>
+                <b><a rel="external"
+                        href="https://dspace.mit.edu/bitstream/handle/1721.1/127840/18-1073_01_MS.pdf?sequence=2&isAllowed=y"
+                        target="_blank"> Model-Free Extremum-Seeking Approach to Autonomous Excavator Control Based
+                        on
+                        Output Power Maximization</a></b><br>
+                Filippos Sotiropoulos and Harry Asada<br>
+                <a rel="external" href="https://ieeexplore.ieee.org/document/8616796" target="_blank">IEEE
+                    Robotics and
+                    Automation Letters</a> 4 (2), 1005 - 1012, 2019.<br>
+                <a href="homepage/power_maximising.bib" aria-label="BibTeX for paper titled &quot;Model-Free Extremum-Seeking Approach to Autonomous Excavator Control Based on
+                Output Power Maximization&quot;" target="_blank">BibTeX</a>
             </div>
         </div>
-
         <div class="separator"></div>
 
         <div class="item">
-            <img src="homepage/xducer.jpg" alt="Surface plot of an acoustic wave propagating through aluminum">
+            <img src="homepage/bond_graph_anticausal.png" alt="A bond graph with">
             <div class="desc">
-                <b><a href="homepage/xducer.pdf" download target="_blank">Determination of Absolute Material
-                        Nonlinearity with Air-Coupled Ultrasonic Receivers</a></b><br>
-                David Torello, Nicholas Selby, Jin-Yeon Kim, Jianmin Qu, and Laurence J. Jacobs<br>
-                <a rel="external" href="https://www.journals.elsevier.com/ultrasonics" target="_blank">Ultrasonics</a>
-                81, 107–117, 2017.<br>
-                <a href="homepage/xducer.bib"
-                    aria-label="BibTeX for paper titled &quot;Determination of Absolute Material Nonlinearity with Air-Coupled Ultrasonic Receivers&quot;"
-                    target="_blank">BibTeX</a>
+                <b><a rel="external" href="https://ieeexplore.ieee.org/abstract/document/8431086"
+                        target="_blank">Causality
+                        in dual faceted linearization of nonlinear dynamical systems</a></b><br>
+                Filippos Sotiropoulos and Harry Asada <br>
+                <a rel="external" href="https://ieeexplore.ieee.org/abstract/document/8431086" target="_blank">
+                    2018 Annual American Control Conference (ACC)
+                </a> 2018.<br>
+                <a href="homepage/dfl_causality.bib" aria-label="BibTeX for paper titled &quot;Dual Faceted Linearization of Nonlinear Dynamical Systems Based on Physical
+            Modeling Theory&quot;" target="_blank">BibTeX</a>
             </div>
         </div>
 
-        <div class="separator"></div>
-
-        <div class="item">
-            <img src="homepage/dualaxis.jpg" alt="Custom tool to measure the fractional quantum Hall effect">
-            <div class="desc">
-                <b><a href="homepage/dualaxis.pdf" download target="_blank"><i>In Situ</i> Biaxial Rotation at
-                        Low-Temperatures in High Magnetic Fields</a></b><br>
-                Nicholas Selby, Matthew Crawford, Lisa Tracy, John L. Reno, and Wei Pan<br>
-                <a rel="external" href="https://aip.scitation.org/journal/rsi" target="_blank">Review of Scientific
-                    Instruments</a> 85 (9), 095116, 2014.<br>
-                <a href="homepage/dualaxis.bib"
-                    aria-label="BibTeX for paper titled &quot;In Situ Biaxial Rotation at Low-Temperatures in High Magnetic Fields&quot;"
-                    target="_blank">BibTeX</a>
-            </div>
-        </div>
     </section>
+
+    <!-- </details> -->
+
+    <div class="separator"></div>
+
+    <!-- PATENTS -->
+    <!-- <details>
+        <summary>
+            Patents </summary> -->
 
     <section id="patents">
         <h2>Patents</h2>
-        <ul>
-            <li>"Methods and Apparatus for Wideband Localization." Zhihong Luo, Qiping Zhang, Nicholas Selby, Yunfei Ma,
-                Manish Singh, and Fadel Adib. U.S. Patent Nos. <a rel="external"
-                    href="https://patents.google.com/patent/US10575277B2/" target="_blank"
-                    aria-label="Patent #10,575,277">10,575,277</a>, <a
-                    href="https://patents.google.com/patent/US10921419B2/" target="_blank"
-                    aria-label="Patent #10,921,419">10,921,419</a>, and <a rel="external"
-                    href="https://patents.google.com/patent/US10701662B2/" target="_blank"
-                    aria-label="Patent #10,701,662">10,701,662</a>. Published 2020 and 2021.</li>
-            <li>"Full-Duplex, Bi-Directional, Analog Relay." Yunfei Ma, Nicholas Selby, and Fadel Adib. U.S. Patent No.
-                <a rel="external" href="https://patents.google.com/patent/US10389429B2/" target="_blank"
-                    aria-label="Patent #10,389,429">10,389,429</a>. Published 2019.
-            </li>
-        </ul>
+        <div class="item">
+            <img src="homepage/patent_bucket_image.png" alt="bucket with optical flow">
+            <div class="desc">
+                <b><a rel="external" href="https://patents.google.com/patent/US10867377B2/en"
+                        target="_blank">Determining Soil State and Controlling Equipment Based on Captured
+                        Images.<br>
+                    </a></b> H. H. Asada, and
+                Filippos
+                Sotiropoulous <br>
+                U.S. Patent No. 10,867,377. Granted 2020 <br>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="item">
+            <img src="homepage/patent_maximum_power.png" alt="Maximum power concept">
+            <div class="desc">
+                <b><a rel="external" href="https://patents.google.com/patent/US11248365B2/en" target="_blank">Automated
+                        control for excavators.</a></b><br>
+                </a> H. H. Asada, and
+                Filippos
+                Sotiropoulous <br>
+                U.S. Patent No. 10,867,377. Granted 2022 <br>
+            </div>
+        </div>
+
     </section>
+    <!-- </details> -->
+    <div class="separator"></div>
+
+    <section id="projects">
+        <h2>Fun Projects</h2>
+        <div class="item">
+            <img src="homepage/block_picking.jpg" alt="Image of block picking project">
+            <div class="desc">
+                <p><b>Rearranging blocks into densely packed configurations using PRM planner and Piece-wise linear
+                        Non-monotone Rearangement Search</b></p>
+                <p>Filippos Sotiropoulos and Ryan Sandzimier</p>
+                <div id="project-link-wrapper">
+                    <a rel="external" href="#popup1"><img src="homepage/icon-video.png" alt="Play video icon"></a>
+                    <a aria-label="Github repo of block manipulation" rel="external"
+                        href="https://github.com/FilipposSot/block_manipulation" target="_blank"><img
+                            src="homepage/icon-github.png" alt="GitHub icon"></a>
+                    <a aria-label="Block manipulation report" href="homepage/block_manipulation_report.pdf" download
+                        target="_blank"><img src="homepage/icon-report.png" alt="Icon of a pdf doc"></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#projects">
+            <div id="popup1" class="overlay">
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/CdenErVEkS4"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </a>
+
+        <div class="separator"></div>
+        <div class="item">
+            <img src="homepage/quadcopter_bouncing.png" alt="Schematic of quad juggling">
+            <div class="desc">
+                <p><b>Trajectory Optimization and Control for Ball Bouncing Quadrotors</b></p>
+                <p>Filippos Sotiropoulos, Ryan Sandzimier and Jerry Ng</p>
+                <div id="project-link-wrapper">
+                    <a rel="external" href="#popup2"><img src="homepage/icon-video.png" alt="Play video icon"></a>
+                    <a aria-label="Github repo of block manipulation" rel="external"
+                        href="https://github.com/rsandzimier/quadrotor_juggling" target="_blank"><img
+                            src="homepage/icon-github.png" alt="GitHub icon"></a>
+                    <a aria-label="Block manipulation report" href="homepage/quad_juggling.pdf" download
+                        target="_blank"><img src="homepage/icon-report.png" alt="Icon of a pdf doc"></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#projects">
+            <div id="popup2" class="overlay">
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/Ek4d72ga24Y"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </a>
+
+
+        <div class="separator"></div>
+        <div class="item">
+            <img src="homepage/diabetes-cgm-type-1.jpg" title="Abbott" alt="Image of Freestyle libre CGM">
+            <div class="desc">
+                <p><b>Continuous Blood Glucose Prediction in Insulin dependent Type 1
+                        Diabetics</b></p>
+                <p>Filippos Sotiropoulos</p>
+                <div id="project-link-wrapper">
+                    <a aria-label="Github repo of blood glucose prediction" rel="external"
+                        href="https://github.com/FilipposSot/Glucose-net" target="_blank"><img
+                            src="homepage/icon-github.png" alt="GitHub icon"></a>
+                    <a aria-label="Block manipulation report" href="homepage/blood_glucose_prediction.pdf" download
+                        target="_blank"><img src="homepage/icon-report.png" alt="Icon of a pdf doc"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
     <section id="awards">
         <h2>Awards</h2>
         <ul>
-            <li>First Place, MIT Mechanical Engineering Research Exhibition, 2019.</li>
-            <li>Graduate Research Fellowship Honorable Mention, National Science Foundation, 2016.</li>
-            <li>Richard K. Whitehead Jr. Memorial Award, Georgia Institute of Technology, 2016. Awarded to top three
-                Mechanical Engineering seniors.</li>
-            <li>Best Oral Presentation, Georgia Tech Undergraduate Research Symposium, 2016.</li>
-            <li>President's Undergraduate Research Award, Georgia Institute of Technology, 2015.</li>
-            <li>Air Products Undergraduate Research Award, Air Products and Chemicals, Inc., 2015.</li>
-            <li>Best Utility Simulation for Product Design, ASME 2014 International Design & Engineering Technical
-                Conferences & Computers & Information in Engineering Conference, 2014.</li>
-            <li>Stamps Leadership Scholarship, Stamps Family Charitable Foundation, Inc., 2013. Merit-based, full cost
-                of university attendance awarded to top 12 of 14,731 applicants.</li>
+            <li>Frederic Barnes Waldron Prize, Inst. of Mechanical Engineers, (2016);<br> best mechanical
+                engineering
+                student</li>
+            <li>Univ. of Bristol Best Project Award, Inst. of Mechanical Engineers, (2016);<br> best individual
+                project
+            </li>
+            <li>Bechtel Industrial Individual Prize, University of Bristol, (2016); <br>greatest contribution to
+                group
+                research project</li>
+            <li>Panhellenic Forensics Debate Competition, (2012); <br>winning national debate competition</li>
         </ul>
     </section>
 
@@ -218,89 +322,22 @@
                     aria-label="Syllabus for course titled &quot;Identification, Estimation, and Learning&quot;"
                     rel="external"
                     href="https://ocw.mit.edu/courses/mechanical-engineering/2-160-identification-estimation-and-learning-spring-2006/"
-                    target="_blank">2.160</a>, <i>Fall 2019</i><br>
+                    target="_blank">2.160</a><br>
                 Key Concepts: machine learning, Kalman filters, system identification<br>
                 Median Student Evaluation: 7/7
             </div>
         </div>
 
-        <div class="separator"></div>
 
-        <div class="item">
-            <img src="homepage/2140.jpg" title="Ti Consiglio un Lavoro"
-                alt="Students interacting with a circuit and oscilloscope">
-            <div class="desc">
-                <b>Analysis and Design of Feedback Control Systems</b><br>
-                <i>Massachusetts Institute of Technology</i>, <a
-                    aria-label="Syllabus for course titled &quot;Analysis and Design of Feedback Control Systems&quot;"
-                    rel="external"
-                    href="https://ocw.mit.edu/courses/mechanical-engineering/2-14-analysis-and-design-of-feedback-control-systems-spring-2014/"
-                    target="_blank">2.140</a>, <i>Spring 2017</i><br>
-                Key Concepts: time and frequency domain analysis, root locus and loop shaping, stability, nonlinearity,
-                digital systems<br>
-                Median Student Evaluation: 7/7
-            </div>
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="item">
-            <img src="homepage/cs1371.jpg" title="GTW" alt="Computer showing code in a text editor">
-            <div class="desc">
-                <b>Computer Science for Engineers</b><br>
-                <i>Georgia Institute of Technology</i>, <a
-                    aria-label="Syllabus for course titled &quot;Computer Science for Engineers&quot;" rel="external"
-                    href="https://www.cc.gatech.edu/fac/David.Smith/CS1371_2018_Fall_Syllabus.pdf" target="_blank">CS
-                    1371</a>, <i>Spring 2013–Spring 2016</i><br>
-                Key Concepts: MATLAB, computing fundamentals, algorithms<br>
-                Median Student Evaluation: 5/5
-            </div>
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="item">
-            <img src="homepage/phys2211.jpg" title="NASA/JPL-Caltech" alt="Galaxies bending spacetime">
-            <div class="desc">
-                <b>Introductory Physics</b><br>
-                <i>Georgia Institute of Technology</i>, <a
-                    aria-label="Syllabus for course titled &quot;Introductory Physics&quot;" rel="external"
-                    href="http://www.introphys.gatech.edu/2017/Spring/2211/Schedule/schedule.html" target="_blank">PHYS
-                    2211</a>, <i>Spring 2014</i><br>
-                Key Concepts: calculus-based classical mechanics, oscillations, waves<br>
-                Median Student Evaluation: 5/5
-            </div>
-        </div>
-    </section>
-
-    <section id="service">
-        <h2>Professional Service</h2>
-        Journal Referee [<a rel="external"
-            href="https://publons.com/researcher/3507536/nicholas-stearns-selby/peer-review/"
-            target="_blank">Publons</a>]:
-        <ul>
-            <li><a rel="external" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979"
-                    target="_blank">IEEE Transactions on Intelligent Transportation Systems</a></li>
-            <li><a rel="external" href="https://car.osu.edu/AAC2022" target="_blank">IFAC International Symposium on
-                    Advances in Automotive Control</a></li>
-            <li><a rel="external" href="https://www.mtns2022.uni-bayreuth.de/en/index.html"
-                    target="_blank">International Symposium on Mathematical Theory of Networks and Systems</a></li>
-            <li><a rel="external" href="https://www.iros2021.org/" target="_blank">IEEE International Conference on
-                    Intelligent Robots and Systems</a></li>
-            <li><a rel="external" href="https://dl.acm.org/journal/tosn" target="_blank">ACM Transactions on Sensor
-                    Networks</a></li>
-            <li><a rel="external" href="https://www.computer.org/web/tmc" target="_blank">IEEE Transactions on Mobile
-                    Computing</a></li>
-            <li><a rel="external" href="https://ieee-iotj.org/" target="_blank">IEEE Internet of Things Journal</a></li>
-        </ul>
     </section>
 
     <footer>
         <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/"><img
                     alt="Creative Commons License" style="border-width:0"
-                    src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a
-                rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
-                Attribution 4.0 International License</a>.</p>
+                    src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a
+            <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+                Attribution 4.0 International License</a>.
+        </p>
     </footer>
 </body>
 
