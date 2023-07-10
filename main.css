@@ -149,17 +149,6 @@ footer img {
     margin-bottom: 0.6em;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background: black;
-        color: white;
-    }
-
-    th {
-        color: black;
-    }
-}
-
 details > summary {
     cursor: pointer;
     list-style-image:url('chevron_right_resized.png');
